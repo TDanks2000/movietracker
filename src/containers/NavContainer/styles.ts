@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -9,5 +10,4 @@ export const Container = styled.div`
   height: 70px;
   background: ${({ theme }) => theme.base.navBg};
   margin-bottom: 20px;
-  overflow: hidden;
 `;
