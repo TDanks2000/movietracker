@@ -16,3 +16,10 @@ export const ContainerNoPadding = styled(Container)`
   padding: 0;
   overflow: hidden;
 `;
+
+export const SectionContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+`;

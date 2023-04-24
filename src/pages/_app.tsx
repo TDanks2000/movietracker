@@ -2,6 +2,7 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 
 import "../styles/reset.css";
+import "@splidejs/react-splide/css";
 
 import { ThemeProvider } from "styled-components";
 import { darkTheme } from "@/assets/themes/dark";
