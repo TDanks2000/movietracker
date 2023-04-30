@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
       font-family: ${({ theme }) => theme.text.fonts.primary}, sans-serif;
       background-color: ${({ theme }) => theme.base.bg};
       color: ${({ theme }) => theme.text.primary};
+      overflow: hidden;
     }
     ::-webkit-scrollbar {
       width: 8px;             

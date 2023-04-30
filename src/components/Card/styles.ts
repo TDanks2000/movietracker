@@ -5,13 +5,13 @@ import styled from "styled-components";
 
 export const TopContainer = styled.div`
   width: 100%;
-  height: 71%;
+  height: 70%;
   transition: all 0.3s ease-in-out;
 `;
 
 export const BottomContainer = styled.div`
   width: 100%;
-  height: 31%;
+  height: 30%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -24,6 +24,7 @@ export const ImageContainer = styled(Image)`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
 `;
 
 export const Title = styled.h1`
@@ -39,14 +40,11 @@ export const Title = styled.h1`
   }
 `;
 
-export const Genres = styled.div`
+export const ReleaseDate = styled.div`
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-`;
-
-export const Genre = styled.span`
   font-size: 0.8rem;
   font-weight: 400;
   color: ${({ theme }) => theme.text.offWhite};
@@ -88,7 +86,7 @@ export const Rating = styled.span`
 `;
 
 export const CardContainer = styled(Link)`
-  width: 200px;
+  width: 180px;
   height: 350px;
   overflow: hidden;
   border-radius: 0.5rem;

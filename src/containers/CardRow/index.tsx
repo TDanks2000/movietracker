@@ -35,7 +35,7 @@ const CardRow = ({ data, keyValue }: any) => {
         const correctProps = utils.correctCardProps(media);
 
         return (
-          <SplideSlide>
+          <SplideSlide key={`splide-${keyValue}-${correctProps.id}`}>
             <Card
               key={`slide-${keyValue}-${correctProps.id}`}
               {...correctProps}

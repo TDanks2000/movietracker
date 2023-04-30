@@ -9,6 +9,7 @@ const correctCardProps = (props: any) => {
     poster_path,
     backdrop_path,
     vote_average,
+    release_date,
   } = props;
 
   const cardProps: CardProps = {
@@ -18,6 +19,7 @@ const correctCardProps = (props: any) => {
     poster_path: poster_path ?? "",
     backdrop_path: backdrop_path ?? "",
     rating: vote_average?.toFixed(1) ?? "??",
+    release_date: release_date,
   };
 
   return cardProps;

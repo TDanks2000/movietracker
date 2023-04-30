@@ -3,12 +3,11 @@ import { CardProps } from "./Card.types";
 import {
   BottomContainer,
   CardContainer,
-  Genre,
-  Genres,
   ImageContainer,
   Rating,
   RatingContainer,
   RatingIcon,
+  ReleaseDate,
   Title,
   TopContainer,
 } from "./styles";
@@ -22,6 +21,7 @@ const Card = ({
   poster_path,
   status,
   rating,
+  release_date,
 }: CardProps) => {
   return (
     <CardContainer
@@ -38,15 +38,7 @@ const Card = ({
       </TopContainer>
       <BottomContainer>
         <Title>{title}</Title>
-        <Genres>
-          {!genres!?.length ? (
-            <Genre>??</Genre>
-          ) : (
-            genres!.map((genre: any) => (
-              <Genre key={`card-genre-${genre}`}>{genre}</Genre>
-            ))
-          )}
-        </Genres>
+        <ReleaseDate>{release_date ?? "??"}</ReleaseDate>
         <RatingContainer>
           {rating ? <RatingIcon /> : null}
           <Rating>{rating?.toString()}</Rating>

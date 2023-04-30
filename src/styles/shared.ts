@@ -23,3 +23,18 @@ export const SectionContainer = styled.div`
   flex-direction: row;
   gap: 10px;
 `;
+
+export const DefaultButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: ${({ theme }) => theme.base.navBg};
+  border-radius: 8px;
+  padding: 0.7rem 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  :hover,
+  :focus {
+    opacity: 0.8;
+  }
+`;

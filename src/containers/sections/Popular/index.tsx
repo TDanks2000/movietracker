@@ -1,16 +1,16 @@
 import { Card } from "@/components";
-import { SectionContainer } from "@/styles/shared";
 import { utils } from "@/utils";
 import { TestPopularMovies } from "@/utils/testData";
 import React, { useRef } from "react";
-import CardRow from "../CardRow";
+import CardRow from "../../CardRow";
+import { SectionContainer, SectionTitle } from "../styles";
 
 const Popular = () => {
   return (
-    <div>
-      <p>Popular</p>
+    <SectionContainer>
+      <SectionTitle>Popular</SectionTitle>
       <CardRow data={TestPopularMovies.results} keyValue={`popular`} />
-    </div>
+    </SectionContainer>
   );
 };
 

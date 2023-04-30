@@ -1,6 +1,7 @@
 export interface CardProps {
   title: string;
   id: number;
+  release_date?: string;
   description: string;
   poster_path?: string;
   backdrop_path?: string;
